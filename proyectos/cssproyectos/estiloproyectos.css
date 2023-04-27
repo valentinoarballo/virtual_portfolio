@@ -1,0 +1,80 @@
+html{
+    background-image: url(../../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+header nav{
+    text-align: center;
+    padding: 2em 0em;
+    margin: 0px;
+    width: 100%;
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+
+img{
+    height: 500px;
+    width: auto;
+}
+
+
+.bloques{
+    border: 1px solid cyan;
+    box-shadow:  0 0 10px rgb(22, 245, 215);;
+    margin: 1em 2em;
+    padding: 1em;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    color: white;
+    
+}
+
+
+.bloques img{
+    margin: 1em;
+}
+
+
+.bloques p, .bloques h2{
+    padding: 1em 3em;
+    text-align: justify;
+}
+
+
+
+
+.bloque4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.bloque4 li a{
+    border: 1px solid cyan;
+    box-shadow:  0 0 10px cyan;
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+    padding: 1em 3em;
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.bloque4 li a:hover{
+    background: cyan;
+    box-shadow:  0 0 30px cyan;
+    color: black;
+
+}
+
+

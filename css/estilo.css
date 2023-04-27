@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+.app {
+    display: inline;
+    padding: 5rem;
+}
+
+.icon {
+    transition: transform .1s ease-in-out;
+
+    filter: drop-shadow(2px 2px 5px cyan);
+}
+
+.icon:hover {
+    transform: rotate(8deg);
+}
+
+.bloques {
+
+    backdrop-filter: blur(15px);    
+    color: black;
+    padding: 1em;
+    margin: 1.5em;
+    border-radius: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.bloques p {
+    color: white;
+    padding: -1em 5em;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.bloques h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+
+#nombre {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    margin: 0px;
+    padding: 1em 0px;
+    height: 9em;
+    width: 100%;
+    border-radius: 0px;
+}
+
+
+/*////////////          contenido sobre mi              ////////////*/
+
+.contenidosobremi {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding: 5em 19% 4em 19%;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.contenidosobremi p {
+
+    border: solid 1px cyan;
+
+    box-shadow: 0 0 10px cyan;
+    padding: 4em 3em;
+    margin: -4em -8em;
+}
+
+#fotomia {
+    width: 200px;
+    height: auto;
+    margin-right: 3em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    float: left;
+
+}
+
+#fotomia {
+    transition: transform .3s ease-in-out;
+}
+
+#fotomia:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 2);
+}
+
+/*////////////              proyectos                    ////////////*/
+
+#container {
+    display: flex;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    perspective: 90rem;
+    perspective-origin: 30% 60%;
+}
+
+.div-transform {
+    display: flex;
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(-3.5deg);
+    margin-left: 9em;
+}
+
+.card {
+    transform: scale(1.02);
+    margin-right: 5em;
+    transition: transform 0.1s ease-in-out;
+    background: url(/img/fondocard1.jpg);
+    border-radius: 8px;
+    padding: 0px 18px;
+    width: 23em;
+    height: 10.7em;
+    transition: 0, 5s ease;
+    overflow: hidden;
+    transform: translate(0);
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card-2 {
+    background: url(/img/fondocard2.jpg);
+}
+
+
+.card-3 {
+    background: url(/img/fondocard3.jpg);
+}
+
+
+.card h2 {
+    text-transform: capitalize;
+}
+
+.card a {
+    height: 1em;
+    width: 5em;
+    letter-spacing: 4px;
+    padding: 0.5em 2em;
+    border-radius: 8px;
+    border: solid 1px cyan;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card a:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0px 0px 28px 5px cyan;
+}
+
+.card:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px black;
+}
+
+/*////////////          capacitaciones              ////////////*/
+
+#caps a {
+    padding: 0.5em 0.5em;
+    margin: 1em 0.5em;
+    width: 18em;
+    border: solid 1px cyan;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
+
+
+#caps a:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0px 0px 28px 5px cyan;
+}
+
+
+#caps ul {
+    list-style: none;
+    display: flex;
+}
+
+#caps {
+    display: flex;
+    height: 22em;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections {
+    display: flex;
+}
+
+.section {
+    width: 55em;
+}
+
+#sec1 {
+    margin-top: 5em;
+    margin-right: 1em;
+}
+
+#sec2 {
+    border-radius: 8px;
+    color: black;
+    padding: 1em 2em;
+}
+
+#sec2 h1{
+    color: white;
+    border-bottom: solid 1px cyan;
+    
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 1.5em;
+    margin: 2em 0em;
+    background-color: white;
+    box-shadow: 0px 0px 30px -5px cyan;
+}
+  
+.español{
+    width: 96%; 
+    height: 100%;
+    background-color: cyan;
+    text-align: center;
+}
+
+.ingles{
+    width: 80%; 
+    height: 100%;
+    background-color: cyan;
+    text-align: center;
+}
+  
+
+
+#sec2 h1{
+    text-align: left;
+}
+
+
+/* ////////////////   seccion de formulario y contacto        ////////////////*/
+
+.cajitas{
+    border: solid 0.1px white;
+    border-radius: 8px;
+    backdrop-filter: blur(15px);
+    background: none;
+    padding: 1em;
+    margin: 1em;
+    color: white;
+}
+
+.cajitas:hover{
+    color:black;
+    border: solid 1px cyan;
+    box-shadow: 0px 0px 30px -5px cyan;
+    background-color: white;
+}
+
+.cajitas:focus{
+    color:black;
+    border: solid 1px cyan;
+    box-shadow: 0px 0px 30px -5px cyan;
+    background-color: white;
+}
+
+
+#botonenviar:hover{
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.3);
+    background: cyan;
+    
+}
+
+
+
+/* ////////////////   encabezado caps        ////////////////*/
+
+#encabezado-caps{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#encabezado-caps ul{
+    display: flex;
+    list-style: none;
+}
+
+#encabezado-caps ul li{
+    margin: 0em 2em;
+    text-align: center;
+    align-items: center;
+}
+
+#encabezado-caps ul li a{
+    margin: 0em 2em;
+    color: white;
+    padding: 0.5em;
+    border-radius: 8px;
+    border: solid 1px cyan;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* ////////////////   contenedores pestañas caps        ////////////////*/
+
+.caps{
+    color: white;
+}
+
+.caps h1{
+    font-family: 'Manrope', sans-serif;;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.caps h3{
+    font-size: 30px;
+}
